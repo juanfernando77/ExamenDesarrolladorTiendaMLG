@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "bks6ZLYeL7QzyknS+kNDK8Hmr1T2WDzx9hGhirUhZNA=",
+  "Source": "ClientApp.Server",
+  "BasePath": "_content/ClientApp.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\juan_\\Desktop\\TiendaMLG\\ClientApp\\clientapp.client\\clientapp.client.esproj",
+      "Version": 2,
+      "Source": "clientapp.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
