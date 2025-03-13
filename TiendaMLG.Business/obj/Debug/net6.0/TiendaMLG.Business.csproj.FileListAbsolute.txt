@@ -15,3 +15,4 @@ C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Business\obj\Debug\net6.0\TiendaMLG.B
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Business\obj\Debug\net6.0\refint\TiendaMLG.Business.dll
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Business\obj\Debug\net6.0\TiendaMLG.Business.pdb
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Business\obj\Debug\net6.0\ref\TiendaMLG.Business.dll
+C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Business\obj\Debug\net6.0\TiendaMLG.Business.sourcelink.json

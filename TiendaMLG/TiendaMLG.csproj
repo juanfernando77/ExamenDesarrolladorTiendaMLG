@@ -24,8 +24,4 @@
     <ProjectReference Include="..\TiendaMLG.Business\TiendaMLG.Business.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="ClientApp\" />
-  </ItemGroup>
-
 </Project>

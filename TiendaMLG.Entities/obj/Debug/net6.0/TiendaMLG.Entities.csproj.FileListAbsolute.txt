@@ -9,3 +9,4 @@ C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Entities\obj\Debug\net6.0\TiendaMLG.E
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Entities\obj\Debug\net6.0\refint\TiendaMLG.Entities.dll
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Entities\obj\Debug\net6.0\TiendaMLG.Entities.pdb
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Entities\obj\Debug\net6.0\ref\TiendaMLG.Entities.dll
+C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Entities\obj\Debug\net6.0\TiendaMLG.Entities.sourcelink.json

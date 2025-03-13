@@ -78,3 +78,5 @@ C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG\obj\Debug\net6.0\refint\TiendaMLG.dll
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG\obj\Debug\net6.0\TiendaMLG.pdb
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG\obj\Debug\net6.0\TiendaMLG.genruntimeconfig.cache
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG\obj\Debug\net6.0\ref\TiendaMLG.dll
+C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG\obj\Debug\net6.0\TiendaMLG.sourcelink.json
+C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG\bin\Debug\net6.0\ClientApp\proxy.conf.json

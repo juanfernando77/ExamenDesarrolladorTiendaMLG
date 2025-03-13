@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'; // ✅ Importa esto correctamente
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TiendaService } from './services/tienda.service';
 
 @NgModule({
   declarations: [
@@ -10,9 +11,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule // ✅ Agrega correctamente este módulo
   ],
-  providers: [],
+  providers: [
+    TiendaService // ✅ Agrega el servicio aquí para que esté disponible en la app
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

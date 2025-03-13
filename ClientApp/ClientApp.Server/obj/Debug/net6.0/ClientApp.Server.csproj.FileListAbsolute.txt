@@ -32,3 +32,4 @@ C:\Users\juan_\Desktop\TiendaMLG\ClientApp\ClientApp.Server\obj\Debug\net6.0\ref
 C:\Users\juan_\Desktop\TiendaMLG\ClientApp\ClientApp.Server\obj\Debug\net6.0\ClientApp.Server.pdb
 C:\Users\juan_\Desktop\TiendaMLG\ClientApp\ClientApp.Server\obj\Debug\net6.0\ClientApp.Server.genruntimeconfig.cache
 C:\Users\juan_\Desktop\TiendaMLG\ClientApp\ClientApp.Server\obj\Debug\net6.0\ref\ClientApp.Server.dll
+C:\Users\juan_\Desktop\TiendaMLG\ClientApp\ClientApp.Server\obj\Debug\net6.0\ClientApp.Server.sourcelink.json

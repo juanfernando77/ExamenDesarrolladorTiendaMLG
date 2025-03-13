@@ -11,11 +11,22 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddScoped<ClienteService>();
 
-
 // ✅ Agregar servicios al contenedor
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// ✅ Habilitar CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngular",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:4200") // Permitir Angular
+                  .AllowAnyMethod()
+                  .AllowAnyHeader();
+        });
+});
 
 // ✅ Construir la aplicación después de registrar servicios
 var app = builder.Build();
@@ -28,6 +39,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+// ✅ Aplicar la política de CORS ANTES de Authorization
+app.UseCors("AllowAngular");
+
 app.UseAuthorization();
 app.MapControllers();
 
