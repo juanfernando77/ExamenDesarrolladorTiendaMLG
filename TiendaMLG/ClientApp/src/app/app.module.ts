@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http'; // ✅ Importa esto correctamente
+import { HttpClientModule } from '@angular/common/http'; // ✅ IMPORTAR
 
 import { AppComponent } from './app.component';
-import { TiendaService } from './services/tienda.service';
+import { ClienteService } from './services/cliente.service'; // ✅ IMPORTAR EL SERVICIO
 
 @NgModule({
   declarations: [
@@ -11,11 +11,9 @@ import { TiendaService } from './services/tienda.service';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule // ✅ Agrega correctamente este módulo
+    HttpClientModule // ✅ NECESARIO PARA HACER PETICIONES HTTP
   ],
-  providers: [
-    TiendaService // ✅ Agrega el servicio aquí para que esté disponible en la app
-  ],
+  providers: [ClienteService], // ✅ DEBE ESTAR AQUÍ
   bootstrap: [AppComponent]
 })
 export class AppModule { }

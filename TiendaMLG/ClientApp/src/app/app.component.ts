@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TiendaService } from './services/tienda.service';
+import { ClienteService } from './services/cliente.service';
 
 @Component({
   selector: 'app-root',
@@ -7,22 +7,21 @@ import { TiendaService } from './services/tienda.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  tiendas: any[] = [];
+  title = 'clientapp';
+  clientes: any[] = [];
 
-  constructor(private tiendaService: TiendaService) {
-    console.log('🔹 Constructor ejecutado');  // 👀 Verifica si el constructor se ejecuta
-  }
+  constructor(private clienteService: ClienteService) { }
 
   ngOnInit() {
-    console.log('✅ ngOnInit ejecutado');  // 👀 Esto DEBE aparecer en la consola
+    alert('✅ ngOnInit ejecutado');
 
-    this.tiendaService.getTiendas().subscribe(
+    this.clienteService.getClientes().subscribe(
       (data) => {
-        console.log('📌 Tiendas cargadas:', data);
-        this.tiendas = data;
+        console.log('📌 Clientes obtenidos desde Angular:', data);
+        this.clientes = data; // 🛠️ ALMACENAR CLIENTES
       },
       (error) => {
-        console.error('⚠️ Error al obtener tiendas:', error);
+        console.error('⚠️ Error al obtener clientes en Angular:', error);
       }
     );
   }

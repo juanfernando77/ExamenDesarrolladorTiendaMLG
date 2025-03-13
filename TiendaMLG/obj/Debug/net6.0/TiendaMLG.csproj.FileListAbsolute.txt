@@ -1,9 +1,9 @@
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG\bin\Debug\net6.0\appsettings.json
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG\bin\Debug\net6.0\ClientApp\angular.json
-C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG\bin\Debug\net6.0\ClientApp\package-lock.json
-C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG\bin\Debug\net6.0\ClientApp\package.json
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG\bin\Debug\net6.0\ClientApp\proxy.conf.json
+C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG\bin\Debug\net6.0\ClientApp\src\package-lock.json
+C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG\bin\Debug\net6.0\ClientApp\src\package.json
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG\bin\Debug\net6.0\ClientApp\tsconfig.app.json
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG\bin\Debug\net6.0\ClientApp\tsconfig.json
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG\bin\Debug\net6.0\ClientApp\tsconfig.spec.json
