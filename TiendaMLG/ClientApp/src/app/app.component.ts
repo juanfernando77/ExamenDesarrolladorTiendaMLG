@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
     this.clienteService.getClientes().subscribe(
       (data) => {
         console.log('📌 Clientes obtenidos desde Angular:', data);
-        this.clientes = data; // 🛠️ ALMACENAR CLIENTES
+        this.clientes = data; 
       },
       (error) => {
         console.error('⚠️ Error al obtener clientes en Angular:', error);

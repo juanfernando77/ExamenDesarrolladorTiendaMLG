@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TiendaMLG.Business.Services;
 using TiendaMLG.Entities.Models;
-using TiendaMLG.Business.DTOs; // Importa el DTO
+using TiendaMLG.Business.DTOs;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using TiendaMLG.Business.DTOs;
@@ -34,7 +34,7 @@ namespace TiendaMLG.Controllers
             return Ok(tienda);
         }
 
-        // POST usando DTO
+        
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] TiendaDTO tiendaDto)
         {

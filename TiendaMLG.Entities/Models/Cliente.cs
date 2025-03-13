@@ -9,12 +9,11 @@ namespace TiendaMLG.Entities.Models
     public class Cliente
     {
             
-            public int ClienteID { get; set; } // Clave primaria
-            public string Nombre { get; set; } // Nombre del cliente
-            public string Apellidos { get; set; } // Apellidos del cliente
-            public string Direccion { get; set; } // Dirección del cliente
+            public int ClienteID { get; set; }
+            public string Nombre { get; set; }
+            public string Apellidos { get; set; } 
+            public string Direccion { get; set; } 
 
-            // Relación con ClienteArticulo (Un cliente puede comprar muchos artículos)
             public ICollection<ClienteArticulo> ClienteArticulos { get; set; }
         
 

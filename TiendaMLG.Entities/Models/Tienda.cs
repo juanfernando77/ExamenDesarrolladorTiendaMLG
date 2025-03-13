@@ -10,11 +10,10 @@ namespace TiendaMLG.Entities.Models
     [Table("Tiendas")]
     public class Tienda
     {
-        public int TiendaID { get; set; } // Clave primaria
-        public string Sucursal { get; set; } // Nombre de la tienda
-        public string Direccion { get; set; } // Dirección de la tienda
+        public int TiendaID { get; set; } 
+        public string Sucursal { get; set; } 
+        public string Direccion { get; set; } 
 
-        // Relación con ArticuloTienda (Una tienda puede vender muchos artículos)
         public ICollection<ArticuloTienda> ArticuloTiendas { get; set; }
 
     }

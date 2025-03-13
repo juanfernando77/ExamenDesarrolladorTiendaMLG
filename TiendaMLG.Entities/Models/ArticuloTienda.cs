@@ -8,12 +8,11 @@ namespace TiendaMLG.Entities.Models
 {
     public class ArticuloTienda
     {
-        public int ID { get; set; } // Clave primaria
-        public int ArticuloID { get; set; } // Clave foránea de Articulo
-        public int TiendaID { get; set; } // Clave foránea de Tienda
-        public DateTime Fecha { get; set; } = DateTime.Now; // Fecha de asociación
+        public int ID { get; set; } 
+        public int ArticuloID { get; set; } 
+        public int TiendaID { get; set; } 
+        public DateTime Fecha { get; set; } = DateTime.Now; 
 
-        // Relaciones con Articulo y Tienda
         public Articulo Articulo { get; set; }
         public Tienda Tienda { get; set; }
     }

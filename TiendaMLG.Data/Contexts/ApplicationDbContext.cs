@@ -18,14 +18,12 @@ namespace TiendaMLG.Data.Contexts
         {
             base.OnModelCreating(modelBuilder);
 
-            // Evita nombres en plural para las tablas en la base de datos
             modelBuilder.Entity<Cliente>().ToTable("Cliente");
             modelBuilder.Entity<Tienda>().ToTable("Tiendas");
             modelBuilder.Entity<Articulo>().ToTable("Articulo");
             modelBuilder.Entity<ArticuloTienda>().ToTable("ArticuloTienda");
             modelBuilder.Entity<ClienteArticulo>().ToTable("ClienteArticulo");
 
-            // Configuración de la relación ArticuloTienda (Muchos a Muchos)
             modelBuilder.Entity<ArticuloTienda>()
                 .HasKey(at => new { at.ArticuloID, at.TiendaID });
 
@@ -41,7 +39,6 @@ namespace TiendaMLG.Data.Contexts
                 .HasForeignKey(at => at.TiendaID)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            // Configuración de la relación ClienteArticulo (Muchos a Muchos)
             modelBuilder.Entity<ClienteArticulo>()
                 .HasKey(ca => new { ca.ClienteID, ca.ArticuloID });
 
@@ -57,7 +54,6 @@ namespace TiendaMLG.Data.Contexts
                 .HasForeignKey(ca => ca.ArticuloID)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            // Configuración de la columna Precio en Articulo
             modelBuilder.Entity<Articulo>()
                 .Property(a => a.Precio)
                 .HasColumnType("decimal(18,2)");

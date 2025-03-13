@@ -64,7 +64,7 @@ namespace TiendaMLG.Controllers
             var actualizado = await _clienteService.ActualizarCliente(clienteExistente);
             if (!actualizado) return NotFound();
 
-            return Ok(clienteExistente); // ✅ Devuelve el cliente actualizado en la respuesta
+            return Ok(clienteExistente);
         }
 
 

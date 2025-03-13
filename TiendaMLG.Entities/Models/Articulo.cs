@@ -8,17 +8,15 @@ namespace TiendaMLG.Entities.Models
 {
     public class Articulo
     {
-        public int ArticuloID { get; set; } // Clave primaria
-        public string Codigo { get; set; } // Código único del artículo
-        public string Descripcion { get; set; } // Descripción del artículo
-        public decimal Precio { get; set; } // Precio del artículo
-        public string Imagen { get; set; } // URL de la imagen del artículo
-        public int Stock { get; set; } // Cantidad de stock disponible
+        public int ArticuloID { get; set; }
+        public string Codigo { get; set; } 
+        public string Descripcion { get; set; } 
+        public decimal Precio { get; set; } 
+        public string Imagen { get; set; } 
+        public int Stock { get; set; } 
 
-        // Relación con ArticuloTienda (Un artículo puede estar en varias tiendas)
         public ICollection<ArticuloTienda> ArticuloTiendas { get; set; }
 
-        // Relación con ClienteArticulo (Un artículo puede ser comprado por varios clientes)
         public ICollection<ClienteArticulo> ClienteArticulos { get; set; }
     }
 }

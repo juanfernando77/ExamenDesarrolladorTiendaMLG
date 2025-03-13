@@ -4,7 +4,6 @@ using TiendaMLG.Data.Contexts;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ✅ Registrar servicios antes de Build()
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
@@ -14,27 +13,23 @@ builder.Services.AddScoped<CienteService>();
 builder.Services.AddScoped<ArticuloService>();
 
 
-// ✅ Agregar servicios al contenedor
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// ✅ Habilitar CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngular",
         policy =>
         {
-            policy.WithOrigins("http://localhost:4200") // Permitir Angular
+            policy.WithOrigins("http://localhost:4200") 
                   .AllowAnyMethod()
                   .AllowAnyHeader();
         });
 });
 
-// ✅ Construir la aplicación después de registrar servicios
 var app = builder.Build();
 
-// ✅ Configurar el pipeline de la aplicación
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -43,13 +38,11 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// ✅ Aplicar la política de CORS ANTES de Authorization
 app.UseCors("AllowAngular");
 
 app.UseAuthorization();
 app.MapControllers();
 
-// ✅ Agregar endpoint de prueba
 var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -69,10 +62,8 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
-// ✅ Solo una llamada a app.Run()
 app.Run();
 
-// ✅ Mover la declaración del record fuera del MapGet()
 internal record WeatherForecast(DateTime Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
