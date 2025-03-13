@@ -10,9 +10,9 @@ C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Business\obj\Debug\net6.0\TiendaMLG.B
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Business\obj\Debug\net6.0\TiendaMLG.Business.AssemblyInfoInputs.cache
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Business\obj\Debug\net6.0\TiendaMLG.Business.AssemblyInfo.cs
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Business\obj\Debug\net6.0\TiendaMLG.Business.csproj.CoreCompileInputs.cache
+C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Business\obj\Debug\net6.0\TiendaMLG.Business.sourcelink.json
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Business\obj\Debug\net6.0\TiendaML.98DD3C5F.Up2Date
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Business\obj\Debug\net6.0\TiendaMLG.Business.dll
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Business\obj\Debug\net6.0\refint\TiendaMLG.Business.dll
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Business\obj\Debug\net6.0\TiendaMLG.Business.pdb
 C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Business\obj\Debug\net6.0\ref\TiendaMLG.Business.dll
-C:\Users\juan_\Desktop\TiendaMLG\TiendaMLG.Business\obj\Debug\net6.0\TiendaMLG.Business.sourcelink.json

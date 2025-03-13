@@ -8,7 +8,6 @@ namespace TiendaMLG.Data.Contexts
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options) { }
 
-        // Definición de las tablas
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Tienda> Tiendas { get; set; }
         public DbSet<Articulo> Articulos { get; set; }

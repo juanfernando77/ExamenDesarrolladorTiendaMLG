@@ -10,6 +10,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 );
 
 builder.Services.AddScoped<ClienteService>();
+builder.Services.AddScoped<CienteService>();
+
 
 // ✅ Agregar servicios al contenedor
 builder.Services.AddControllers();
