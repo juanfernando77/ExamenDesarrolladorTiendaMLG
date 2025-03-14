@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ClienteService {
-  private apiUrl = 'https://localhost:7132/api/Clientes'; // ✅ MISMA URL DEL FETCH
+  private apiUrl = 'https://localhost:7132/api/Clientes';
 
   constructor(private http: HttpClient) { }
 
